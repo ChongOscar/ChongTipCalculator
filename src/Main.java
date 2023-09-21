@@ -8,7 +8,7 @@ public class Main {
         double totalCost;
         double tipCost;
         String[] itemsOrdered;
-        int itemId;
+        int itemId = 0;
 
 
 
@@ -20,7 +20,12 @@ public class Main {
         tipPercent = scan.nextInt();
         scan.nextLine();
         while (itemId != -1) {
-            System.out.println("Enter your item ID");
+            System.out.println("Enter your item ID: ");
+            itemId = scan.nextInt();
+            if (itemId != -1) {
+                //totalCost +=
+            }
+
         }
 
 
