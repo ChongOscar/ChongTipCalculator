@@ -8,12 +8,20 @@ public class Main {
         double totalCost;
         double tipCost;
         String[] itemsOrdered;
-        String[] menuName = {"Crunchy taco", "Soft taco"};
-        double[] menuCost = {2.49, 2.99};
+        int itemId;
 
 
 
-        System.out.println("Welcome to the tip calculator");
+        System.out.println("Welcome to the tip calculator!");
+        System.out.print("How many people are in your group: ");
+        groupNum = scan.nextInt();
+        scan.nextLine();
+        System.out.print("What's the tip percentage? (0-100): ");
+        tipPercent = scan.nextInt();
+        scan.nextLine();
+        while (itemId != -1) {
+            System.out.println("Enter your item ID");
+        }
 
 
     }
