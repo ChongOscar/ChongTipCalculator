@@ -9,7 +9,7 @@ public class Menu {
     double getPrice(String foodId) {
         for (String[] item : menu) {
             if (item[0].equals(foodId)) {
-                return Double.parseDouble(strings[2]);
+                return Double.parseDouble(item[2]);
             }
         }
         return 0;
