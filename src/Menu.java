@@ -12,7 +12,8 @@ public class Menu {
             {"7", "Large Nacho Fries", "2.99"},
             {"8", "Chicken Quesadilla", "4.99"},
             {"9", "Pepsi", "2.39"},
-            {"10", "Baja Blast", "2.39"}
+            {"10", "Baja Blast", "2.39"},
+            {"11", "Custom", "???"}
     };
 
     public double getPrice(String foodId) {
@@ -33,7 +34,7 @@ public class Menu {
         return null;
     }
 
-    // _______________________________
+    // _______________________________  menu format
     //| 1. Crunchy Taco - 2.49        |
     //|_______________________________|
     public void printMenu() {
@@ -44,7 +45,7 @@ public class Menu {
             itemString = "| " + item[0] + ". " + item[1] + " - " + item[2];
             stringLength = itemString.split("").length;
             System.out.print(itemString);
-            while (stringLength < 34) {
+            while (stringLength < 34) { //adds spaces to make bars on the right of menu line up
                 System.out.print(" ");
                 stringLength++;
             }

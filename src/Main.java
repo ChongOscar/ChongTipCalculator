@@ -7,7 +7,7 @@ public class Main {
         Order order = new Order(scan, menu);
 
     }
-    public static void clearScreen() {
+    public static void clearScreen() { //clear screen helper method
         for (int i = 0; i < 50; i++) {
            System.out.println(); 
         }
