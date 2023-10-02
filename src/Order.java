@@ -41,13 +41,13 @@ public class Order {
         Main.clearScreen();
         System.out.println("Thank you for ordering at Taco Bell, here is your reciept.");
         System.out.println("----------------------------------------------------------");
-        System.out.println("Total bill before tip: " + Math.round(calculator.getTotalBillBeforeTip() * 100) / 100);
+        System.out.println("Total bill before tip: " + (Math.round(calculator.getTotalBillBeforeTip() * 100.0) / 100.0));
         System.out.println("Total tip percentage: " + (int) calculator.getTipPercentage() + "%");
-        System.out.println("Total tip: " + (Math.round(calculator.tipAmount() * 100.0) / 100));
-        System.out.println("Total bill with tip: " + (Math.round(calculator.totalBill() * 100.0) / 100));
-        System.out.println("Per person cost before tip: " + (Math.round(calculator.perPersonCostBeforeTip() * 100.0) / 100));
-        System.out.println("Tip per person: " + (Math.round(calculator.perPersonTipAmount() * 100.0) / 100));
-        System.out.println("Total cost per person: " + (Math.round(calculator.perPersonTotalCost() * 100.0) / 100));
+        System.out.println("Total tip: " + (Math.round(calculator.tipAmount() * 100.0) / 100.0));
+        System.out.println("Total bill with tip: " + (Math.round(calculator.totalBill() * 100.0) / 100.0));
+        System.out.println("Per person cost before tip: " + (Math.round(calculator.perPersonCostBeforeTip() * 100.0) / 100.0));
+        System.out.println("Tip per person: " + (Math.round(calculator.perPersonTipAmount() * 100.0) / 100.0));
+        System.out.println("Total cost per person: " + (Math.round(calculator.perPersonTotalCost() * 100.0) / 100.0));
         System.out.println("----------------------------------------------------------");
         System.out.println("Your cart: ");
         for (int i = 0; i < itemNameOrdered.size(); i++) {
